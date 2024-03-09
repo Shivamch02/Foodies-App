@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rating{
+    background-color:#00ad1d; 
+}
+
+.card {
+    
+    transition: transform .3s;
+}
+
+.profile-box{
+    box-shadow: -1px 5px 10px 5px #70707033;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .body {
+      font-size: small;
+      margin: auto;
+    }
+    .top-rated{
+        
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        margin-top: 1rem;
+    }
+    .top-rated-btn{
+        margin-top: 0.7rem;
+    }
+    .search{
+        width: 10rem;
+        height: 2rem;
+    }
+    .search-btn{
+        padding-bottom: 1.7rem;
+    }
+    .header-btn{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .about-body{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-right{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 446px){
+    .header {
+      font-size: x-small;
+      padding: auto;
+      margin: auto;
+      font: bold;
+    }
+    .cart-btn{
+        font-size: x-small;
+        font-weight: bold;
+    }
+    .top-rated{
+        margin-left: 5rem;
+    }
+    .footer{
+        font-size: x-small;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .search-btn{
+        padding-bottom: 1.7rem;
+    }
+}
+
+
+@media only screen and (max-width: 445px) and (min-width: 0px){
+    .header{
+        width: 460px;
+        height: 70px;
+    }
+    .cart-btn{
+        font-size: x-small;
+        font: bold;
+    }
+    .logo{
+        width: 90px;
+        height: 70px;
+    }
+    .top-rated{
+        margin-left: 4rem;
+    }
+    .search-btn{
+        padding-bottom: 1.7rem;
+    }
+    .body{
+        width: 445px;
+    }
+    .footer{
+        width: 0px;
+        font-size: 0%;
+    }
+    .big-footer{
+        background-color: white;
+        height: 0px;
+        width: 0;
+    }
+    .footer-img{
+        display: inherit;
+    }
+    .copyright{
+        font-size: 0%;
+    }
+
+}   
+
